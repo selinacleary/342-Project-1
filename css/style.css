@@ -151,7 +151,6 @@
                         width: 20%;
                         height: auto;
                         position: absolute;
-                        z-index: -2;
                     }
                     
                     .backdropred1 {
@@ -307,15 +306,6 @@
                     nav a div.selected {
                         width: 20px;
                         height: 20px;
-                        background: black;
-                        border-radius: 50px;
-                        top: 150px;
-                        margin: 30px;
-                    }
-                    
-                    .circle {
-                        width: 20px;
-                        height: 20px;
                         background: #29ABE2;
                         border-radius: 50px;
                         top: 150px;
@@ -410,36 +400,42 @@
                         position: absolute;
                         z-index: 2;
                         top: 900px;
+                        display: none;
                     }
                     
                     .p2 {
                         position: absolute;
                         z-index: 2;
                         top: 1600px;
+                        display: none;
                     }
                     
                     .p3 {
                         position: absolute;
                         z-index: 2;
                         top: 2300px;
+                        display: none;
                     }
                     
                     .p4 {
                         position: absolute;
                         z-index: 2;
                         margin-top: 3000px;
+                        display: none;
                     }
                     
                     .p5 {
                         position: absolute;
                         z-index: 2;
                         margin-top: 3690px;
+                        display: none;
                     }
                     
                     .p6 {
                         position: absolute;
                         z-index: 2;
                         margin-top: 4400px;
+                        display: none;
                     }
                     
                     .p7 {
@@ -513,6 +509,8 @@
                         top: 960px;
                         left: 490px;
                         z-index: 1;
+                        display: none;
+                        cursor: pointer;
                     }
                     
                     .section2 {
@@ -529,8 +527,7 @@
                         position: absolute;
                         top: 930px;
                         z-index: 2;
-                        left: -600px;
-                        display: none;
+                        left: -700px;
                     }
                     
                     .spaceoddity {
@@ -540,6 +537,8 @@
                         top: 1650px;
                         left: 490px;
                         z-index: 1;
+                        display: none;
+                        cursor: pointer;
                     }
                     
                     .section3 {
@@ -564,8 +563,10 @@
                         height: auto;
                         position: absolute;
                         top: 1600px;
-                        left: -700px;
+                        left: -600px;
                         z-index: 2;
+                        -webkit-animation-delay: 1s;
+                        animation-delay: 1s;
                     }
                     
                     .lifeonmars {
@@ -575,6 +576,8 @@
                         top: 2350px;
                         left: 490px;
                         z-index: 1;
+                        display: none;
+                        cursor: pointer;
                     }
                     
                     .section4 {
@@ -601,6 +604,8 @@
                         margin-top: 3050px;
                         left: 490px;
                         z-index: 1;
+                        display: none;
+                        cursor: pointer;
                     }
                     
                     .section5 {
@@ -619,6 +624,8 @@
                         margin-top: 3750px;
                         left: 490px;
                         z-index: 1;
+                        display: none;
+                        cursor: pointer;
                     }
                     
                     .section6 {
@@ -647,6 +654,8 @@
                         margin-top: 4500px;
                         left: 430px;
                         z-index: 1;
+                        display: none;
+                        cursor: pointer;
                     }
                     
                     .section7 {
@@ -679,4 +688,38 @@
                         position: absolute;
                         top: 7500px;
                         z-index: 5;
+                    }
+                    
+                    @-webkit-keyframes slideAcrossCustom {
+                        from {
+                            -webkit-transform: translate3d(0, 0, 0);
+                            transform: translate3d(0, 0, 0);
+                        }
+                        to {
+                            visibility: hidden;
+                            -webkit-transform: translate3d(300%, 0, 0);
+                            transform: translate3d(300%, 0, 0);
+                        }
+                    }
+                    
+                    @keyframes slideAcrossCustom {
+                        from {
+                            -webkit-transform: translate3d(0, 0, 0);
+                            transform: translate3d(0, 0, 0);
+                        }
+                        to {
+                            visibility: hidden;
+                            -webkit-transform: translate3d(300%, 0, 0);
+                            transform: translate3d(300%, 0, 0);
+                        }
+                    }
+                    
+                    .animatedCustom {
+                        -webkit-animation-duration: 3s;
+                        animation-duration: 3s;
+                    }
+                    
+                    .slideAcrossCustom {
+                        -webkit-animation-name: slideAcrossCustom;
+                        animation-name: slideAcrossCustom;
                     }
