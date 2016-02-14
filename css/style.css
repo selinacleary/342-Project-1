@@ -295,19 +295,19 @@
                         overflow: none;
                     }
                     
-                    .circle1,
-                    .circle2,
-                    .circle3,
-                    .circle5,
-                    .circle5,
-                    .circle6,
-                    .circle7,
-                    .circle8,
-                    .circle9,
-                    .circle10 {
+                    nav a div {
                         width: 20px;
                         height: 20px;
                         background: white;
+                        border-radius: 50px;
+                        top: 150px;
+                        margin: 30px;
+                    }
+                    
+                    nav a div.selected {
+                        width: 20px;
+                        height: 20px;
+                        background: black;
                         border-radius: 50px;
                         top: 150px;
                         margin: 30px;
