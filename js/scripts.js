@@ -142,14 +142,14 @@ $(function () {
         $('nav a div').removeClass('selected', 200);
         if (direction === 'down') {
             $('.circle2').addClass('selected', 200);
+
+            //on .section2: (animate.css)
+            //.flag slides in and out, .ziggy fades in. 
+            $('.flag').toggleClass('animatedCustom slideAcrossCustom');
+            $('.ziggy').delay(1000).fadeIn(1000);
         } else {
             $('.circle1').addClass('selected', 200);
         }
-
-        //on .section2: (animate.css)
-        //.flag slides in and out, .ziggy fades in. 
-        $('.flag').toggleClass('animatedCustom slideAcrossCustom');
-        $('.ziggy').delay(1000).fadeIn(1000);
     });
 });
 
@@ -158,16 +158,15 @@ $(function () {
         $('nav a div').removeClass('selected', 200);
         if (direction === 'down') {
             $('.circle3').addClass('selected', 200);
+
+            //on .section3: (animate.css)
+            //.spotlight1 and .spotlight2 slide in and out, .spaceoddity fades in
+            $('.spotlight1').toggleClass('animatedCustom slideAcrossCustom');
+            $('.spotlight2').delay(1000).toggleClass('animatedCustom slideAcrossCustom');
+            $('.spaceoddity').delay(2000).fadeIn(1000);
         } else {
             $('.circle2').addClass('selected', 200);
         }
-
-        //on .section3: (animate.css)
-        //.spotlight1 and .spotlight2 slide in and out, .spaceoddity fades in
-        $('.spotlight1').toggleClass('animatedCustom slideAcrossCustom');
-        $('.spotlight2').delay(1000).toggleClass('animatedCustom slideAcrossCustom');
-        $('.spaceoddity').delay(2000).fadeIn(1000);
-
     });
 });
 
@@ -176,14 +175,14 @@ $(function () {
         $('nav a div').removeClass('selected', 200);
         if (direction === 'down') {
             $('.circle4').addClass('selected', 200);
+
+            //on .section4: (animate.css)
+            //.space slides in and out, .lifeonmars fades 
+            $('.space').toggleClass('animatedCustom slideAcrossCustom');
+            $('.lifeonmars').delay(1000).fadeIn(1000);
         } else {
             $('.circle3').addClass('selected', 200);
         }
-
-        //on .section4: (animate.css)
-        //.space slides in and out, .lifeonmars fades 
-        $('.space').toggleClass('animatedCustom slideAcrossCustom');
-        $('.lifeonmars').delay(1000).fadeIn(1000);
 
     });
 });
@@ -193,13 +192,19 @@ $(function () {
         $('nav a div').removeClass('selected', 200);
         if (direction === 'down') {
             $('.circle5').addClass('selected', 200);
+            //on .section5: plugin? .fadeTo? ease?
+            //lights fade to black (ease) and then fade back in .bodysuit fades in
+            $('.bg').animate({
+                backgroundColor: 'rgba(0, 0, 0, 1)'
+            });
+            $('.bodysuit').delay(1000).fadeIn(1000);
+
+            $('.bg').delay(2000).animate({
+                backgroundColor: '#58595B'
+            });
         } else {
             $('.circle4').addClass('selected', 200);
         }
-
-        //on .section5: plugin? .fadeTo? ease?
-        //lights fade to black (ease) and then fade back in .bodysuit fades in
-
     });
 });
 
@@ -208,15 +213,14 @@ $(function () {
         $('nav a div').removeClass('selected', 200);
         if (direction === 'down') {
             $('.circle6').addClass('selected', 200);
+
+            //on .section6: (animate.css)
+            //.screen slides in and out, .kimono fades in
+            $('.screen').toggleClass('animatedCustom slideAcrossCustom');
+            $('.kimono').delay(1000).fadeIn(1000);
         } else {
             $('.circle5').addClass('selected', 200);
         }
-
-        //on .section6: (animate.css)
-        //.screen slides in and out, .kimono fades in
-        $('.screen').toggleClass('animatedCustom slideAcrossCustom');
-        $('.kimono').delay(1000).fadeIn(1000);
-
     });
 });
 
@@ -231,6 +235,7 @@ $(function () {
 
         //on .section 8: plugin(??) 
         //falling glitter covers page 6, .tokyo fades in
+
     });
 });
 

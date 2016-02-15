@@ -1,725 +1,653 @@
-                    /* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
-                    
-                    html,
-                    body,
-                    div,
-                    span,
-                    applet,
-                    object,
-                    iframe,
-                    h1,
-                    h2,
-                    h3,
-                    h4,
-                    h5,
-                    h6,
-                    p,
-                    blockquote,
-                    pre,
-                    a,
-                    abbr,
-                    acronym,
-                    address,
-                    big,
-                    cite,
-                    code,
-                    del,
-                    dfn,
-                    em,
-                    img,
-                    ins,
-                    kbd,
-                    q,
-                    s,
-                    samp,
-                    small,
-                    strike,
-                    strong,
-                    sub,
-                    sup,
-                    tt,
-                    var,
-                    b,
-                    u,
-                    i,
-                    center,
-                    dl,
-                    dt,
-                    dd,
-                    ol,
-                    ul,
-                    li,
-                    fieldset,
-                    form,
-                    label,
-                    legend,
-                    table,
-                    caption,
-                    tbody,
-                    tfoot,
-                    thead,
-                    tr,
-                    th,
-                    td,
-                    article,
-                    aside,
-                    canvas,
-                    details,
-                    embed,
-                    figure,
-                    figcaption,
-                    footer,
-                    header,
-                    hgroup,
-                    menu,
-                    nav,
-                    output,
-                    ruby,
-                    section,
-                    summary,
-                    time,
-                    mark,
-                    audio,
-                    video {
-                        margin: 0;
-                        padding: 0;
-                        border: 0;
-                        font-size: 100%;
-                        font: inherit;
-                        vertical-align: baseline;
-                    }
-                    /* HTML5 display-role reset for older browsers */
-                    
-                    article,
-                    aside,
-                    details,
-                    figcaption,
-                    figure,
-                    footer,
-                    header,
-                    hgroup,
-                    menu,
-                    nav,
-                    section {
-                        display: block;
-                    }
-                    
-                    body {
-                        line-height: 1;
-                    }
-                    
-                    ol,
-                    ul {
-                        list-style: none;
-                    }
-                    
-                    blockquote,
-                    q {
-                        quotes: none;
-                    }
-                    
-                    blockquote:before,
-                    blockquote:after,
-                    q:before,
-                    q:after {
-                        content: '';
-                        content: none;
-                    }
-                    
-                    table {
-                        border-collapse: collapse;
-                        border-spacing: 0;
-                    }
-                    /* General Styles */
-                    
-                    body {
-                        font-family: 'futura', 'Didact Gothic', sans-serif;
-                        background-color: #58595B;
-                        width: 1280px;
-                        height: 10000px;
-                    }
-                    
-                    .entirepage {
-                        width: 100%;
-                        margin: auto;
-                    }
-                    
-                    .backdrop {
-                        width: 20%;
-                        height: auto;
-                        position: absolute;
-                    }
-                    
-                    .backdropred1 {
-                        top: 300px;
-                        left: 100px;
-                    }
-                    
-                    .backdropblue1 {
-                        top: 75px;
-                        left: 700px;
-                    }
-                    
-                    .backdropyellow1 {
-                        top: 150px;
-                        left: 500px;
-                    }
-                    
-                    .backdropred2 {
-                        top: 900px;
-                        left: 400px;
-                        opacity: .4
-                    }
-                    
-                    .backdropblue2 {
-                        top: 800px;
-                        left: 100px;
-                    }
-                    
-                    .backdropyellow2 {
-                        top: 800px;
-                        left: 700px;
-                    }
-                    
-                    .backdropred3 {
-                        top: 1500px;
-                        left: 400px;
-                    }
-                    
-                    .backdropblue3 {
-                        top: 1500px;
-                        left: 100px;
-                    }
-                    
-                    .backdropyellow3 {
-                        top: 1500px;
-                        left: 700px;
-                    }
-                    
-                    .backdropred4 {
-                        top: 2000px;
-                        left: 100px;
-                    }
-                    
-                    .backdropblue4 {
-                        top: 2000px;
-                        left: 600px;
-                        opacity: .4;
-                    }
-                    
-                    .backdropyellow4 {
-                        top: 2000px;
-                        left: 500px;
-                    }
-                    
-                    .backdropred5 {
-                        top: 2300px;
-                        left: 400px;
-                    }
-                    
-                    .backdropblue5 {
-                        top: 2600px;
-                        left: 100px;
-                    }
-                    
-                    .backdropyellow5 {
-                        top: 2600px;
-                        left: 700px;
-                    }
-                    
-                    .backdropred6 {
-                        top: 3100px;
-                        left: 400px;
-                    }
-                    
-                    .backdropblue6 {
-                        top: 3100px;
-                        left: 100px;
-                    }
-                    
-                    .backdropyellow6 {
-                        top: 3400px;
-                        left: 700px;
-                    }
-                    
-                    .backdropred7 {
-                        top: 4000px;
-                        left: 400px;
-                    }
-                    
-                    .backdropblue7 {
-                        top: 4000px;
-                        left: 100px;
-                    }
-                    
-                    .backdropyellow7 {
-                        top: 4000px;
-                        left: 700px;
-                    }
-                    
-                    header {
-                        position: relative;
-                        width: 500px;
-                        z-index: 1;
-                    }
-                    
-                    nav {
-                        display: inline-block;
-                        position: ;
-                        top: 130px;
-                        left: 120px;
-                        z-index: 4;
-                        cursor: pointer;
-                        position: fixed;
-                    }
-                    
-                    nav a {
-                        color: white;
-                        width: 70px;
-                        cursor: pointer;
-                    }
-                    
-                    nav a.selected {
-                        color: #26A9E0;
-                    }
-                    
-                    .page {
-                        display: block;
-                        width: 100%;
-                        height: 100%;
-                        position: relative;
-                        overflow: none;
-                    }
-                    
-                    nav a div {
-                        width: 20px;
-                        height: 20px;
-                        background: white;
-                        border-radius: 50px;
-                        top: 150px;
-                        margin: 30px;
-                    }
-                    
-                    nav a div.selected {
-                        width: 20px;
-                        height: 20px;
-                        background: #29ABE2;
-                        border-radius: 50px;
-                        top: 150px;
-                        margin: 30px;
-                    }
-                    
-                    .bluebar {
-                        position: relative;
-                        top: 55px;
-                        left: 150px;
-                        width: 300px;
-                        background-color: #29ABE2;
-                        width: 25px;
-                        height: 55px;
-                    }
-                    
-                    .redbg {
-                        width: 1460px;
-                        margin: auto;
-                        height: 152px;
-                        background-color: #EF4137;
-                        position: absolute;
-                        z-index: -1;
-                        margin-left: -150px;
-                    }
-                    
-                    .leftcurtain {
-                        position: absolute;
-                        top: 125px;
-                        left: -40px;
-                        width: 58%;
-                        height: auto;
-                        margin: 0px;
-                        z-index: 3;
-                        display: ;
-                    }
-                    
-                    .rightcurtain {
-                        position: absolute;
-                        top: 125px;
-                        left: 610px;
-                        width: 58%;
-                        height: auto;
-                        margin: 0px;
-                        z-index: 3;
-                        display: ;
-                    }
-                    
-                    .leftcurtain2 {
-                        position: absolute;
-                        top: 7500px;
-                        left: 610px;
-                        width: 58%;
-                        height: auto;
-                        margin: 0px;
-                        z-index: -1;
-                    }
-                    
-                    .rightcurtain2 {
-                        position: absolute;
-                        top: 7500px;
-                        left: -40px;
-                        width: 58%;
-                        height: auto;
-                        margin: 0px;
-                        z-index: -1;
-                    }
-                    
-                    p {
-                        width: 175px;
-                        margin-left: 900px;
-                        height: inherit;
-                        font-size: 9pt;
-                        line-height: 1.5;
-                        padding: 20px;
-                        background-color: white;
-                        width: 170px;
-                    }
-                    
-                    .paragraphspace {
-                        line-height: 5px;
-                    }
-                    
-                    .pintro {
-                        position: absolute;
-                        z-index: 2;
-                        top: 200px;
-                        display: none;
-                    }
-                    
-                    .p1 {
-                        position: absolute;
-                        z-index: 2;
-                        top: 900px;
-                        display: none;
-                    }
-                    
-                    .p2 {
-                        position: absolute;
-                        z-index: 2;
-                        top: 1600px;
-                        display: none;
-                    }
-                    
-                    .p3 {
-                        position: absolute;
-                        z-index: 2;
-                        top: 2300px;
-                        display: none;
-                    }
-                    
-                    .p4 {
-                        position: absolute;
-                        z-index: 2;
-                        margin-top: 3000px;
-                        display: none;
-                    }
-                    
-                    .p5 {
-                        position: absolute;
-                        z-index: 2;
-                        margin-top: 3690px;
-                        display: none;
-                    }
-                    
-                    .p6 {
-                        position: absolute;
-                        z-index: 2;
-                        margin-top: 4400px;
-                        display: none;
-                    }
-                    
-                    .p7 {
-                        position: absolute;
-                        z-index: 2;
-                        margin-top: 7600px;
-                        padding-bottom: 65px;
-                        width: 400px;
-                        left: -450px;
-                    }
-                    
-                    h1 {
-                        font-size: 30px;
-                        color: white;
-                        margin-left: 200px;
-                        padding-bottom: 7px;
-                        letter-spacing: 2px;
-                    }
-                    
-                    h2 {
-                        margin-left: 200px;
-                        font-style: italic;
-                        color: black;
-                    }
-                    
-                    h3 {
-                        position: absolute;
-                        top: 400px;
-                        left: 500px;
-                        z-index: 4;
-                        background: white;
-                        padding: 30px;
-                        cursor: pointer;
-                        display: ;
-                    }
-                    
-                    h4 {
-                        text-align: center;
-                        z-index: 3;
-                        line-height: 1.5;
-                        position: absolute;
-                        margin-top: 7730px;
-                        left: 630px;
-                    }
-                    
-                    .naked {
-                        width: 15%;
-                        height: auto;
-                        position: absolute;
-                        top: 260px;
-                        left: 490px;
-                        z-index: 1;
-                        cursor: pointer;
-                        display: none;
-                    }
-                    
-                    .lightbeam {
-                        width: 21.5%;
-                        height: auto;
-                        position: absolute;
-                        top: 136.5px;
-                        left: 450px;
-                        z-index: 2;
-                        display: none;
-                    }
-                    
-                    .ziggy {
-                        width: 15%;
-                        height: auto;
-                        position: absolute;
-                        top: 960px;
-                        left: 490px;
-                        z-index: 1;
-                        display: none;
-                        cursor: pointer;
-                    }
-                    
-                    .section2 {
-                        height: 30px;
-                        width: 30px;
-                        position: absolute;
-                        top: 800px;
-                        z-index: 5;
-                    }
-                    
-                    .flag {
-                        width: 55%;
-                        height: auto;
-                        position: absolute;
-                        top: 930px;
-                        z-index: 2;
-                        left: -700px;
-                    }
-                    
-                    .spaceoddity {
-                        width: 15%;
-                        height: auto;
-                        position: absolute;
-                        top: 1650px;
-                        left: 490px;
-                        z-index: 1;
-                        display: none;
-                        cursor: pointer;
-                    }
-                    
-                    .section3 {
-                        height: 30px;
-                        width: 30px;
-                        position: absolute;
-                        top: 1490px;
-                        z-index: 5;
-                    }
-                    
-                    .spotlight1 {
-                        width: 40%;
-                        height: auto;
-                        position: absolute;
-                        top: 1630px;
-                        left: -600px;
-                        z-index: 2;
-                    }
-                    
-                    .spotlight2 {
-                        width: 40%;
-                        height: auto;
-                        position: absolute;
-                        top: 1600px;
-                        left: -600px;
-                        z-index: 2;
-                        -webkit-animation-delay: 1s;
-                        animation-delay: 1s;
-                    }
-                    
-                    .lifeonmars {
-                        width: 15%;
-                        height: auto;
-                        position: absolute;
-                        top: 2350px;
-                        left: 490px;
-                        z-index: 1;
-                        display: none;
-                        cursor: pointer;
-                    }
-                    
-                    .section4 {
-                        height: 30px;
-                        width: 30px;
-                        position: absolute;
-                        top: 2150px;
-                        z-index: 5;
-                    }
-                    
-                    .space {
-                        width: 77%;
-                        height: auto;
-                        position: absolute;
-                        top: 2340px;
-                        left: -1000px;
-                        z-index: 2;
-                    }
-                    
-                    .bodysuit {
-                        width: 15%;
-                        height: auto;
-                        position: absolute;
-                        margin-top: 3050px;
-                        left: 490px;
-                        z-index: 1;
-                        display: none;
-                        cursor: pointer;
-                    }
-                    
-                    .section5 {
-                        background-color: ;
-                        height: 30px;
-                        width: 30px;
-                        position: absolute;
-                        top: 2990px;
-                        z-index: 5;
-                    }
-                    
-                    .kimono {
-                        width: 15%;
-                        height: auto;
-                        position: absolute;
-                        margin-top: 3750px;
-                        left: 490px;
-                        z-index: 1;
-                        display: none;
-                        cursor: pointer;
-                    }
-                    
-                    .section6 {
-                        background-color: ;
-                        height: 30px;
-                        width: 30px;
-                        position: absolute;
-                        top: 3700px;
-                        z-index: 5;
-                    }
-                    
-                    .screen {
-                        width: 40%;
-                        height: auto;
-                        position: absolute;
-                        top: 3750px;
-                        left: -600px;
-                        z-index: 2;
-                        display: ;
-                    }
-                    
-                    .tokyo {
-                        width: 25%;
-                        height: auto;
-                        position: absolute;
-                        margin-top: 4500px;
-                        left: 430px;
-                        z-index: 1;
-                        display: none;
-                        cursor: pointer;
-                    }
-                    
-                    .section7 {
-                        background-color: ;
-                        height: 30px;
-                        width: 30px;
-                        position: absolute;
-                        top: 4450px;
-                        z-index: 5;
-                    }
-                    
-                    .glitter1,
-                    .glitter2,
-                    .glitter3,
-                    .glitter4,
-                    .glitter5,
-                    .glitter6 {
-                        width: 2%;
-                        height: auto;
-                        position: absolute;
-                        top: 4400px;
-                        left: 500px;
-                        display: ;
-                    }
-                    
-                    .section8 {
-                        background-color: ;
-                        height: 30px;
-                        width: 30px;
-                        position: absolute;
-                        top: 7500px;
-                        z-index: 5;
-                    }
-                    
-                    @-webkit-keyframes slideAcrossCustom {
-                        from {
-                            -webkit-transform: translate3d(0, 0, 0);
-                            transform: translate3d(0, 0, 0);
-                        }
-                        to {
-                            visibility: hidden;
-                            -webkit-transform: translate3d(300%, 0, 0);
-                            transform: translate3d(300%, 0, 0);
-                        }
-                    }
-                    
-                    @keyframes slideAcrossCustom {
-                        from {
-                            -webkit-transform: translate3d(0, 0, 0);
-                            transform: translate3d(0, 0, 0);
-                        }
-                        to {
-                            visibility: hidden;
-                            -webkit-transform: translate3d(300%, 0, 0);
-                            transform: translate3d(300%, 0, 0);
-                        }
-                    }
-                    
-                    .animatedCustom {
-                        -webkit-animation-duration: 3s;
-                        animation-duration: 3s;
-                    }
-                    
-                    .slideAcrossCustom {
-                        -webkit-animation-name: slideAcrossCustom;
-                        animation-name: slideAcrossCustom;
-                    }
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+
+}
+ol,
+ul {
+    list-style: none;
+}
+blockquote,
+q {
+    quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* General Styles */
+body {
+    font-family: 'futura', 'Didact Gothic', sans-serif;
+    background-color: #58595B;
+    width: 1280px;
+    height: 10000px;
+}
+.entirepage {
+    width: 100%;
+    margin: auto;
+}
+.backdrop {
+    width: 20%;
+    height: auto;
+    position: absolute;
+}
+.backdropred1 {
+    top: 300px;
+    left: 100px;
+}
+.backdropblue1 {
+    top: 75px;
+    left: 700px;
+}
+.backdropyellow1 {
+    top: 150px;
+    left: 500px;
+}
+.backdropred2 {
+    top: 900px;
+    left: 400px;
+    opacity: .4
+}
+.backdropblue2 {
+    top: 800px;
+    left: 100px;
+}
+.backdropyellow2 {
+    top: 800px;
+    left: 700px;
+}
+.backdropred3 {
+    top: 1500px;
+    left: 400px;
+}
+.backdropblue3 {
+    top: 1500px;
+    left: 100px;
+}
+.backdropyellow3 {
+    top: 1500px;
+    left: 700px;
+}
+.backdropred4 {
+    top: 2000px;
+    left: 100px;
+}
+.backdropblue4 {
+    top: 2000px;
+    left: 600px;
+    opacity: .4;
+}
+.backdropyellow4 {
+    top: 2000px;
+    left: 500px;
+}
+.backdropred5 {
+    top: 2300px;
+    left: 400px;
+}
+.backdropblue5 {
+    top: 2600px;
+    left: 100px;
+}
+.backdropyellow5 {
+    top: 2600px;
+    left: 700px;
+}
+.backdropred6 {
+    top: 3100px;
+    left: 400px;
+}
+.backdropblue6 {
+    top: 3100px;
+    left: 100px;
+}
+.backdropyellow6 {
+    top: 3400px;
+    left: 700px;
+}
+.backdropred7 {
+    top: 4000px;
+    left: 400px;
+}
+.backdropblue7 {
+    top: 4000px;
+    left: 100px;
+}
+.backdropyellow7 {
+    top: 4000px;
+    left: 700px;
+}
+header {
+    position: relative;
+    width: 500px;
+    z-index: 1;
+}
+nav {
+    display: inline-block;
+    position: ;
+    top: 130px;
+    left: 120px;
+    z-index: 4;
+    cursor: pointer;
+    position: fixed;
+}
+nav a {
+    color: white;
+    width: 70px;
+    cursor: pointer;
+}
+nav a.selected {
+    color: #26A9E0;
+}
+.page {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: none;
+}
+nav a div {
+    width: 20px;
+    height: 20px;
+    background: white;
+    border-radius: 50px;
+    top: 150px;
+    margin: 30px;
+}
+nav a div.selected {
+    width: 20px;
+    height: 20px;
+    background: #29ABE2;
+    border-radius: 50px;
+    top: 150px;
+    margin: 30px;
+}
+.bluebar {
+    position: relative;
+    top: 55px;
+    left: 150px;
+    width: 300px;
+    background-color: #29ABE2;
+    width: 25px;
+    height: 55px;
+}
+.redbg {
+    width: 1460px;
+    margin: auto;
+    height: 152px;
+    background-color: #EF4137;
+    position: absolute;
+    z-index: -1;
+    margin-left: -150px;
+}
+.leftcurtain {
+    position: absolute;
+    top: 125px;
+    left: -40px;
+    width: 58%;
+    height: auto;
+    margin: 0px;
+    z-index: 3;
+    display: ;
+}
+.rightcurtain {
+    position: absolute;
+    top: 125px;
+    left: 610px;
+    width: 58%;
+    height: auto;
+    margin: 0px;
+    z-index: 3;
+    display: ;
+}
+.leftcurtain2 {
+    position: absolute;
+    top: 7500px;
+    left: 610px;
+    width: 58%;
+    height: auto;
+    margin: 0px;
+    z-index: -1;
+}
+.rightcurtain2 {
+    position: absolute;
+    top: 7500px;
+    left: -40px;
+    width: 58%;
+    height: auto;
+    margin: 0px;
+    z-index: -1;
+}
+p {
+    width: 175px;
+    margin-left: 900px;
+    height: inherit;
+    font-size: 9pt;
+    line-height: 1.5;
+    padding: 20px;
+    background-color: white;
+    width: 170px;
+}
+.paragraphspace {
+    line-height: 5px;
+}
+.pintro {
+    position: absolute;
+    z-index: 2;
+    top: 200px;
+    display: none;
+}
+.p1 {
+    position: absolute;
+    z-index: 2;
+    top: 900px;
+    display: none;
+}
+.p2 {
+    position: absolute;
+    z-index: 2;
+    top: 1600px;
+    display: none;
+}
+.p3 {
+    position: absolute;
+    z-index: 2;
+    top: 2300px;
+    display: none;
+}
+.p4 {
+    position: absolute;
+    z-index: 2;
+    margin-top: 3000px;
+    display: none;
+}
+.p5 {
+    position: absolute;
+    z-index: 2;
+    margin-top: 3690px;
+    display: none;
+}
+.p6 {
+    position: absolute;
+    z-index: 2;
+    margin-top: 4400px;
+    display: none;
+}
+.p7 {
+    position: absolute;
+    z-index: 2;
+    margin-top: 7600px;
+    padding-bottom: 65px;
+    width: 400px;
+    left: -450px;
+}
+h1 {
+    font-size: 30px;
+    color: white;
+    margin-left: 200px;
+    padding-bottom: 7px;
+    letter-spacing: 2px;
+}
+h2 {
+    margin-left: 200px;
+    font-style: italic;
+    color: black;
+}
+h3 {
+    position: absolute;
+    top: 400px;
+    left: 500px;
+    z-index: 4;
+    background: white;
+    padding: 30px;
+    cursor: pointer;
+    display: ;
+}
+h4 {
+    text-align: center;
+    z-index: 3;
+    line-height: 1.5;
+    position: absolute;
+    margin-top: 7730px;
+    left: 630px;
+}
+.naked {
+    width: 15%;
+    height: auto;
+    position: absolute;
+    top: 260px;
+    left: 490px;
+    z-index: 1;
+    cursor: pointer;
+    display: none;
+}
+.lightbeam {
+    width: 21.5%;
+    height: auto;
+    position: absolute;
+    top: 136.5px;
+    left: 450px;
+    z-index: 2;
+    display: none;
+}
+.ziggy {
+    width: 15%;
+    height: auto;
+    position: absolute;
+    top: 960px;
+    left: 490px;
+    z-index: 1;
+    display: none;
+    cursor: pointer;
+}
+.section2 {
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 800px;
+    z-index: 5;
+}
+.flag {
+    width: 55%;
+    height: auto;
+    position: absolute;
+    top: 930px;
+    z-index: 2;
+    left: -700px;
+}
+.spaceoddity {
+    width: 15%;
+    height: auto;
+    position: absolute;
+    top: 1650px;
+    left: 490px;
+    z-index: 1;
+    display: none;
+    cursor: pointer;
+}
+.section3 {
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 1490px;
+    z-index: 5;
+}
+.spotlight1 {
+    width: 40%;
+    height: auto;
+    position: absolute;
+    top: 1630px;
+    left: -600px;
+    z-index: 2;
+}
+.spotlight2 {
+    width: 40%;
+    height: auto;
+    position: absolute;
+    top: 1600px;
+    left: -600px;
+    z-index: 2;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+.lifeonmars {
+    width: 15%;
+    height: auto;
+    position: absolute;
+    top: 2350px;
+    left: 490px;
+    z-index: 1;
+    display: none;
+    cursor: pointer;
+}
+.section4 {
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 2150px;
+    z-index: 5;
+}
+.space {
+    width: 77%;
+    height: auto;
+    position: absolute;
+    top: 2340px;
+    left: -1000px;
+    z-index: 2;
+}
+.bodysuit {
+    width: 15%;
+    height: auto;
+    position: absolute;
+    margin-top: 3050px;
+    left: 490px;
+    z-index: 1;
+    display: none;
+    cursor: pointer;
+}
+.section5 {
+    background-color: ;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 2990px;
+    z-index: 5;
+}
+.kimono {
+    width: 15%;
+    height: auto;
+    position: absolute;
+    margin-top: 3750px;
+    left: 490px;
+    z-index: 1;
+    display: none;
+    cursor: pointer;
+}
+.section6 {
+    background-color: ;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 3700px;
+    z-index: 5;
+}
+.screen {
+    width: 40%;
+    height: auto;
+    position: absolute;
+    top: 3750px;
+    left: -600px;
+    z-index: 2;
+    display: ;
+}
+.tokyo {
+    width: 25%;
+    height: auto;
+    position: absolute;
+    margin-top: 4500px;
+    left: 430px;
+    z-index: 1;
+    display: none;
+    cursor: pointer;
+}
+.section7 {
+    background-color: ;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 4450px;
+    z-index: 5;
+}
+.glitter1,
+.glitter2,
+.glitter3,
+.glitter4,
+.glitter5,
+.glitter6 {
+    width: 2%;
+    height: auto;
+    position: absolute;
+    top: 4400px;
+    left: 500px;
+    display: ;
+}
+.section8 {
+    background-color: ;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 7500px;
+    z-index: 5;
+}
+@-webkit-keyframes slideAcrossCustom {
+    from {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    
+    to {
+        visibility: hidden;
+        -webkit-transform: translate3d(300%, 0, 0);
+        transform: translate3d(300%, 0, 0);
+    }
+}
+@keyframes slideAcrossCustom {
+    from {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    
+    to {
+        visibility: hidden;
+        -webkit-transform: translate3d(300%, 0, 0);
+        transform: translate3d(300%, 0, 0);
+    }
+}
+.animatedCustom {
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+}
+.slideAcrossCustom {
+    -webkit-animation-name: slideAcrossCustom;
+    animation-name: slideAcrossCustom;
+}
