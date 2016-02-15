@@ -229,6 +229,9 @@ $(function () {
         $('nav a div').removeClass('selected', 200);
         if (direction === 'down') {
             $('.circle7').addClass('selected', 200);
+            $('.spotlight3').toggleClass('animatedCustom slideAcrossCustom');
+            $('.spotlight4').delay(1000).toggleClass('animatedCustom slideAcrossCustom');
+            $('.tokyo').delay(2000).fadeIn(1000);
         } else {
             $('.circle6').addClass('selected', 200);
         }

@@ -598,18 +598,23 @@ h4 {
     top: 4450px;
     z-index: 5;
 }
-.glitter1,
-.glitter2,
-.glitter3,
-.glitter4,
-.glitter5,
-.glitter6 {
-    width: 2%;
+.spotlight3 {
+    width: 40%;
     height: auto;
     position: absolute;
     top: 4400px;
-    left: 500px;
-    display: ;
+    left: -600px;
+    z-index: 2;
+}
+.spotlight4 {
+    width: 40%;
+    height: auto;
+    position: absolute;
+    top: 4400px;
+    left: -600px;
+    z-index: 2;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
 }
 .section8 {
     background-color: ;
